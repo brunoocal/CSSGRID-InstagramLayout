@@ -1,0 +1,209 @@
+    html{
+        background: #FAFAFA;
+    }
+    
+    .main-grid{
+        display: grid;
+    }
+
+    .header{
+       display: grid;
+       column-gap: 5px;
+       align-content: center;
+       background-color: #F9F9F9;
+       border: 1px solid grey;
+    } 
+
+    .header .IGImg{
+
+    }
+
+    .header p{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        color: grey;
+    }
+
+
+    .header-item{
+        justify-self: center;
+        align-self: center;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .item2{
+
+    }
+
+    .header figure{
+        height: 3vw;
+        border-radius: 150px;
+        overflow: hidden;
+    }
+
+    .header .profile-pic{
+        height: inherit;
+    }
+
+
+    .main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        margin-top: 2%;
+        justify-self: center;
+        margin-bottom: 2%;
+    }
+
+
+
+    .profileInfo{
+        display: grid;
+    }
+
+    .upper{
+        display: grid;
+        grid-template-columns: repeat(11,minmax(calc(100%/11), 1fr));
+        grid-template-rows: repeat(10, minmax(calc(100%/10), 1fr));
+    }
+
+    .account-title{
+        font-family:  'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 32px;
+        align-self: center;
+    }
+
+    .account-follow, .account-suggested{
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        background-color:#0095f6;
+        border-radius: 4px;
+        font-size: 1.35vw;
+        align-self: center;
+    }
+
+    .account-follow{
+    }
+
+    .account-suggested{
+        grid-row: 1;
+        grid-column: 8/9;
+    }
+
+    .account-suggested svg{
+        height: 1.1vw;
+    }
+
+    .account-more{
+        margin-top: 10px;
+        grid-row: 1;
+        grid-column: 9/10;
+        width: 100%;
+        height: 37.5%;
+    }
+
+    .upper div{
+        grid-row: 2;
+    }
+
+    .profileStats{
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .profileStats span{
+        font-weight: bold;
+    }
+
+    #uno{
+        
+    }
+
+    #dos{
+        
+    }
+
+    #tres{
+        
+    }
+    
+
+    .stories{
+        display: grid;
+        grid-template-rows: 1fr 0.2fr;
+        justify-items: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .stories img{
+        border-radius: 800px;
+        grid-row: span 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .stories p{
+        grid-row: 2/2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .post-list{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0px, 30%));
+        justify-content: center;
+        grid-gap: 28px;
+    }
+
+    .post{
+        cursor: pointer;
+        position: relative;
+        display: block;
+    }
+
+    .post-image{
+        margin: 0;
+    }
+
+    .post-image img{
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .post-overlay{
+        background: rgba(0,0,0,.4);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    .post:hover .post-overlay{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, minmax(0px, 1fr));
+            padding: 10%;
+    }
+
+    .post-likes, .post-comments{
+        width: 80;
+        margin: 5px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
+
+

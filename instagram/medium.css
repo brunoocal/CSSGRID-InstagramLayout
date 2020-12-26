@@ -1,0 +1,65 @@
+.main-grid{
+    grid-template-rows: 12.5vw 37.5vw 12.5vw;
+    margin-bottom: 3.5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid grey;
+}
+
+.imgwrapper{
+    width: 55.5%;
+    height: 91.5%;
+}
+
+.main-profilePic{
+    width: 51.5%;
+}
+
+.main{
+    width: 90%;
+    height: 85%;
+}
+
+.header p{
+    padding: 1%;
+}
+
+.account-follow{
+    font-size: 1.75vw;
+    grid-column: 7/9;
+    grid-row: 2/span 2;
+    margin-top: 15%;
+    padding-top: 5%;
+}
+
+.profileStats{
+    grid-row: 7/span 2;
+}
+
+.profileStats span{
+    font-size: 3vw;
+}
+
+.downer{
+    grid-template-rows: repeat(6, minmax(0, 15%));
+    grid-template-columns: minmax(0, 1fr);
+    grid-column: 2/2;
+}
+
+.post-list{
+    grid-gap: 28px;
+}
+
+.downer p{
+    font-size: 2.15vw;
+    margin-left: 10%;
+}
+
+.stories{
+    bottom: 0%;
+}
+.stories img{
+    width: 50%;
+}
+.stories p{
+    font-size: 2vw;
+}

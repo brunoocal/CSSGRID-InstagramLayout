@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-grid{
+    grid-template-rows: 15vw 75vw 30vw;
+    grid-template-columns: minmax(0, 100vw);
+    margin-bottom: 7.5%;
+    position: relative;
+}
+
+.header{
+    grid-template-columns: 1fr 40% 5% 5% 5% 5% 5% 5%;
+    grid-template-rows: 1fr;
+    grid-row: span 1;
+    width: 100%;
+}
+
+.header .IGImg{
+    height: 25%;
+    margin: 0 10%;
+    justify-self: start;
+    align-self: center;
+    grid-row: span 1;
+    grid-column: span 1;
+    }
+
+.header p{
+    width: 85%;
+    height: 30%;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5vw;
+    border: 1px solid grey;
+    border-radius: 10px;
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.header-item{
+    height: 2vw;
+}
+
+.item2{
+ height: 4vh;
+ width: 3vw;
+ grid-row: span 1;
+ grid-column: span 1;
+}
+
+.main{
+    margin: 0;
+    width: 90%;
+    height: 100%;
+    align-self: center;
+}
+
+.profileInfo{
+    grid-row: 1;
+    grid-column: 1;
+    grid-template-columns: minmax(30%, 30%) minmax(0, 1fr);
+    grid-template-rows: minmax(10%, 50%) minmax(0, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.imgwrapper{
+    width: 90%;
+    height: 65%;
+    border-radius: 900px;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    border-radius: 900px;
+    background: linear-gradient(45deg, rgba(243,161,88,1) 0%, rgba(213,86,96,1) 38%, rgba(184,54,139,1) 100%);
+}
+
+.main-profilePic{
+    width: 86.5%;
+    border-radius: 900px;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    padding: 2%;
+    background: white;
+}
+
+.upper{
+    grid-row: 1;
+    grid-column: 2/span 1;
+}
+
+
+.account-title{
+    grid-row: 3/3;
+    grid-column: 2/6;
+    font-size: 5.6vw;
+}
+
+.account-follow {
+    grid-row: 3/4;
+    grid-column: 7/11;
+    font-size: 2.75vw;
+    width: 100%;
+    height: 100%;
+}
+
+.account-suggested{
+    display: none;
+}
+
+.account-more{
+    display: none;
+}
+
+.profileStats{
+    font-size: 2.4vw;
+    grid-row: 6/span 2;
+    color: grey;
+}
+
+.profileStats span{
+    font-size: 3.75vw;
+    text-align: center;
+    color: black;
+}
+
+#uno{
+    grid-column: 2/5;
+}
+#dos{
+    grid-column: 6/7;
+}
+#tres{
+    grid-column: 9/11;
+}
+
+.downer{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: span 2;
+    grid-template-columns: 0.10fr minmax(0,1fr);
+    grid-template-rows: repeat(6, minmax(0, 10%));
+}
+.downer p{
+    font-size: 3.5vw;
+    grid-row: span 1;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    grid-column: 2/2;
+    color: rgb(38,38,38);
+}
+
+.downer span{
+    font-weight: bold;
+}
+
+.downer a{
+    text-decoration: none;
+}
+
+.stories{
+    width: 90%;
+    height: 100%;
+    grid-template-columns: repeat(6, minmax(0, 25%));
+    grid-row: 3/4;
+    grid-column: 1;
+    column-gap: 15px;
+    position: relative;
+    bottom: 20%;
+}
+
+.stories img{
+    width: 92%;
+    padding: 2%;
+    border: 1px solid grey;
+}
+
+.stories p{
+    font-size: 4vw;
+}
+
+.post-list{
+    grid-template-columns: repeat(3, minmax(0px, calc(27.5%)));
+    grid-gap: 3px;
+}
+
+
+.post-overlay span{
+    grid-row: span 1;
+    justify-self: center;
+    align-self: center;
+    display: block;
+}
+
+.post-likes, .post-comments{
+    font-size: 2vw;
+}
+
+.post-icon1, .post-icon2{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.post-icon1{
+    background-image: url(/cssgrid/instagram/heart-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    fill: white;
+}
+
+.post-icon2{
+    background-image: url(/cssgrid/instagram/comment-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+

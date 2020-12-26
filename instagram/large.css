@@ -1,0 +1,155 @@
+.main-grid{
+    grid-template-rows: minmax(0px,50px) minmax(0px, 300px) minmax(0px,120px);
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+}
+
+.header{
+    grid-template-columns: minmax(0px, 26.4rem) 40rem 5rem 5rem 5rem 5rem 5rem 5rem;
+    justify-content: center;
+}
+
+.header .IGImg{
+    height: 30px;
+}
+
+.header figure{
+    width: 3rem;
+    height: 3rem;
+}
+
+.header p{
+    padding: 0.5rem 0.79rem 0% 0.79rem;
+    margin: 0%;
+    width: 340px;
+    height: 30px;
+    font-size: 1.65rem;
+    opacity: 0.65;
+}
+
+.header-item{
+    height: 1.3rem;
+}
+.item2{
+    height: 4.5rem;
+    width: 2.2rem;
+}
+.imgwrapper{
+    width: 76.5%;
+    height: 105%;
+    max-width: 150px;
+    max-height: 150px;
+    grid-row: 2 / span 5;
+}
+
+.main-profilePic{
+    width: 70.5%;
+    max-width: 150px;
+    max-height: 150px;
+    grid-row: 2 /span 5;
+}
+
+.main{
+    width: 65%;
+    height: 100%;
+    max-width: 650px;
+    grid-template-columns: minmax(0px, 650px);
+    align-self: initial;
+}
+
+.upper{
+    grid-row: 1/ span 4;
+    grid-template-columns: repeat(11,minmax(0px, 59.09px));
+    grid-template-rows: repeat(10, minmax(0px, 65px));
+
+}
+
+.profileInfo{
+    grid-template-rows: repeat(10, minmax(0, 65px));
+    grid-template-columns: minmax(195px, 195px) minmax(0, 650px);
+    width: 100%;
+    height: 100%;
+}
+
+.account-title{
+    font-size: 3rem;
+    max-width: 165px;
+    grid-row: 4/4;
+}
+
+.account-follow{
+    grid-column: 6/8;
+    grid-row: 4/6;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-bottom: 1.25rem;
+    font-size: 1.7rem;
+}
+
+.profileStats{
+    font-size: 1.15rem;
+    align-self: unset;
+    justify-self: start;
+    grid-row: 7;
+}
+.profileStats span{
+    font-size: 1.75rem;
+}
+
+#uno{
+    grid-column: 2/2;
+}
+#dos{
+    grid-column: 4/4;
+}
+#tres{
+    grid-column: 6/6;
+}
+
+.downer{
+    margin-top: 2%;
+    grid-template-rows: repeat(6, minmax(0, 68.25px));
+    grid-row: 5/11;
+}
+.downer p{
+    font-size: 1.45rem;
+    max-width: calc(410px + 10%);
+}
+
+.stories{
+    margin-top: 2rem;
+    grid-template-rows: minmax(0px, 100px) minmax(0px, 25px);
+    grid-template-columns: repeat(6, minmax(0, calc(1000px/6)));
+    align-content: center;
+    justify-content: center;
+}
+
+.stories img{
+    width: 50%;
+    max-width: 85px;
+}
+
+.stories p{
+ font-size: 1.5rem;
+ font-weight: normal;
+}
+
+.post-list{
+    grid-template-columns: repeat(3, minmax(193px, 293px));
+}
+
+.post:hover .post-overlay{
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, minmax(0px, calc(300px/4)));
+    padding: 10%;
+}
+
+.post-icon1, .post-icon2{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.post-likes, .post-comments{
+    font-size: 2rem;
+}
